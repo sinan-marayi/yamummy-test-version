@@ -1,14 +1,13 @@
 <template>
   <Navbar></Navbar>
-  <pdpListing></pdpListing>
+  <router-view></router-view>
 </template>
 
 <script>
 import "./assets/tailwind.css";
 import Navbar from "./components/navbar.vue";
 // import Home from "./pages/Home.vue";
-// import Dashboard from "./pages/Dashboard.vue";
-import pdpListing from "./pages/pdpListing.vue";
+// import Dashboard from "./pages/Dashboard.vue"
 
 export default {
   name: "App",
@@ -16,7 +15,6 @@ export default {
     Navbar,
     // Home,
     // Dashboard
-    pdpListing
   },
 };
 </script>
