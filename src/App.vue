@@ -1,18 +1,20 @@
 <template>
   <Navbar></Navbar>
-  <Home></Home>
+  <Dashboard></Dashboard>
 </template>
 
 <script>
 import "./assets/tailwind.css";
 import Navbar from "./components/navbar.vue";
-import Home from "./pages/Home.vue";
+// import Home from "./pages/Home.vue";
+import Dashboard from "./pages/Dashboard.vue"
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Home,
+    // Home,
+    Dashboard
   },
 };
 </script>
