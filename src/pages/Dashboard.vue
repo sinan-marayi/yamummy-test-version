@@ -77,7 +77,7 @@
               class="w-full flex justify-center lg:justify-start items-center bg-yellow-400"
             >
               <span
-                class="w-10 h-10 flex justify-center  flex-none rounded-full items-center"
+                class="w-10 h-10 flex justify-center flex-none rounded-full items-center"
               >
                 <svg
                   id="Layer_1"
@@ -183,24 +183,26 @@
           <div
             class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 2xl:gap-8 bg-blue-400"
           >
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
-        <TenantCard></TenantCard>
+            <TenantCard
+              v-for="(person, index) in persons"
+              :key="person.id"
+              @click="openModal(index)"
+            >
+              <div>
+                <p>{{ person.name }}</p>
+              </div>
+            </TenantCard>
           </div>
         </div>
       </div>
     </div>
 
     <!--OFF CANVAS OFFCANVAS-->
-<TenantModal></TenantModal>
+    <TenantModal
+      v-if="toggleModal"
+      @close="closeModal"
+      :person="person"
+    ></TenantModal>
 
     <!--MOBILE NAV MOBILE NAV-->
     <nav
@@ -311,16 +313,52 @@
 </template>
 
 <script>
-import TenantModal from "../components/dashboardTenantModal.vue"
-import TenantCard from "../components/cards/tenantCard.vue"
+import TenantModal from "../components/dashboardTenantModal.vue";
+import TenantCard from "../components/cards/tenantCard.vue";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Dashboard",
   components: {
-      TenantModal,
-      TenantCard
+    TenantModal,
+    TenantCard,
+  },
+  data() {
+    return {
+      persons: [
+        {
+          id: 1,
+          name: "Martin Maravattickal",
+        },
+        {
+          id: 2,
+          name: "Amos Maravattickal",
+        },
+        {
+          id: 3,
+          name: "Martin Maravattickal",
+        },
+        {
+          id: 4,
+          name: "Sinan Marayi",
+        },
+        {
+          id: 5,
+          name: "Anburaja",
+        },
+      ],
+      toggleModal: false,
+      person: {},
+    };
+  },
+  methods: {
+    closeModal() {
+      this.toggleModal = false;
     },
-    
+    openModal(index){
+      this.toggleModal = true;
+      this.person = this.persons[index]
+    }
+  },
 };
 </script>

@@ -2,7 +2,7 @@
 <!--OFF CANVAS OFFCANVAS-->
 
 <div class="flex flex-col sm:w-1/2 md:w-2/5 lg:w-1/4 h-screen bg-purple-600 fixed top-0 right-0 z-50 px-4">
-        <div class="flex h-12 bg-yellow-400 items-center justify-end">
+        <div class="flex h-12 bg-yellow-400 items-center justify-end " @click="close">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -15,7 +15,7 @@
                 <div class="flex bg-red-200 rounded-full border-8 w-38 h-38">
                     <img src="../assets/img/card/Rectangle42strip-image-02.png">
                 </div>
-                <h2 class="flex text-xl bg-red-500 justify-center">Martin Maravattickal</h2>
+                <h2 class="flex text-xl bg-red-500 justify-center">{{ person.name }}</h2>
             </div>
 
 
@@ -103,6 +103,13 @@
 
 
 export default{
-    name:'TenantModal'
+    name:'TenantModal',
+    props:['person'],
+    methods:{
+        close(){
+            this.$emit('close')
+        }
+
+    }
 }
 </script>

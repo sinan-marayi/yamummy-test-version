@@ -7,6 +7,7 @@
                 class="rounded-full bg-green-400 border-4 border-red-400 h-28 w-28 lg:h-36 lg:w-36"
               ></div>
               <div class="bg-yellow-600 flex flex-col">
+                <slot/>
                 <h3 class="text-base font-medium">Martin Maravattickal</h3>
                 <div class="flex items-center text-center justify-center">
                   <span class="">India</span>
