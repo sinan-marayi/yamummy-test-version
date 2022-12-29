@@ -14,6 +14,8 @@
             </div>
         </div>
     </nav>
+    <div class="border-b border-slate-200"></div>
+
 </template>
 
 <script>

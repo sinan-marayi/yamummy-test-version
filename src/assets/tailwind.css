@@ -3,3 +3,25 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components{
+    .card{
+        @apply
+        bg-white
+        w-auto h-auto rounded mb-2 snap-start
+    }
+    p{
+        @apply
+        leading-5
+    }
+    .material-symbols-outlined{
+        @apply
+    }
+    .card-scroll{
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+    }
+}

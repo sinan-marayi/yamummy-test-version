@@ -27,9 +27,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="container mx-auto px-6 mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-5 gap-4 overflow-x-scroll"
-    >
+    <div class="container mx-auto px-6 mt-3 gap-4 scroll-pl-1 card-scroll auto-cols-[minmax(85%,_21fr)] md:auto-cols-[minmax(24.7%,_21fr)] lg:auto-cols-[minmax(19.7%,_21fr)]" >
       <SquareCard></SquareCard>
       <SquareCard></SquareCard>
       <SquareCard></SquareCard>
