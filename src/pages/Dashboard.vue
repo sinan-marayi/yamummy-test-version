@@ -3,14 +3,15 @@
     <div class="flex h-screen">
       <!--NAV MENU-->
       <nav
-        class="bg-red-500 w-24 lg:w-48 hidden md:flex flex-col justify-between pt-2 pb-4"
+        class=" w-24 lg:w-48 hidden md:flex flex-col justify-between pt-2 pb-4 shadow border-r rounded-r-2xl"
       >
-        <div class="flex flex-col bg-amber-500 items-center space-y-6">
-          <div class="flex flex-none bg-purple-600">
-            <span class="hidden lg:flex flex-none bg-slate-600">
+        <div class="flex flex-col  items-center space-y-6 mt-3 mb-4">
+          <div class="flex flex-none ">
+            <span class="hidden lg:flex flex-none ">
               <svg
-                width="159"
-                height="36"
+                class="mt-2"
+                width="150"
+                height="34"
                 viewBox="0 0 159 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +33,7 @@
                 width="36"
                 height="36"
                 viewBox="0 0 36 36"
-                fill="none"
+                fill="rgba(243, 80, 109, 1)"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -46,11 +47,11 @@
           </div>
           <!--MENU ITEMS-->
           <div
-            class="flex flex-col w-full PS-2 flex-none bg-cyan-600 items-center space-y-2"
+            class="flex flex-col w-full PS-2 flex-none  items-center space-y-2 "
           >
             <a
               href="/dashboard/messages"
-              class="w-full justify-center lg:justify-start flex items-center bg-yellow-400"
+              class="w-full justify-center lg:justify-start flex items-center mt-7"
             >
               <span
                 class="w-10 h-10 flex justify-center items-center flex-none rounded-full"
@@ -62,6 +63,8 @@
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
+                  
+                  
                 >
                   <path
                     d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"
@@ -74,7 +77,7 @@
             </a>
             <a
               href="/dashboard"
-              class="w-full flex justify-center lg:justify-start items-center bg-yellow-400"
+              class="w-full flex justify-center lg:justify-start items-center "
             >
               <span
                 class="w-10 h-10 flex justify-center flex-none rounded-full items-center"
@@ -97,10 +100,10 @@
               >
             </a>
             <div
-              class="w-full flex items-center justify-center lg:justify-start bg-yellow-400"
+              class="w-full flex items-center justify-center lg:justify-start "
             >
               <a href="/dashboard/profile" 
-              class="w-full justify-center lg:justify-start flex items-center bg-yellow-400"
+              class="w-full justify-center lg:justify-start flex items-center "
               
               >
                 <span
@@ -127,10 +130,10 @@
               </a>
             </div>
             <div
-              class="w-full flex items-center justify-center lg:justify-start bg-yellow-400"
+              class="w-full flex items-center justify-center lg:justify-start "
             >
               <a href="/dashboard/settings"
-              class="w-full justify-center lg:justify-start flex items-center bg-yellow-400"
+              class="w-full justify-center lg:justify-start flex items-center "
               
               >
                 <span
@@ -159,16 +162,16 @@
           </div>
         </div>
         <div
-          class="flex flex-col w-full h-48 bg-blue-700 mx-auto items-center justify-end"
+          class="flex flex-col w-full h-48  mx-auto items-center justify-end"
         >
           <div
-            class="w-full md:px-2 flex justify-center lg:justify-start items-center bg-yellow-400"
+            class="w-full md:px-2 flex justify-center lg:justify-start items-center "
           >
             <span
-              class="w-12 h-12 lg:mr-2 flex-none bg-slate-600 rounded-full items-center justify-center"
+              class="w-12 h-12 lg:mr-2 flex-none  rounded-full items-center justify-center"
             >
               <img
-                class="justify-center items-center"
+                class="justify-center items-center rounded-full border-4 shadow"
                 src="../assets/img/card/Rectangle22Square_card_image.png"
               />
             </span>

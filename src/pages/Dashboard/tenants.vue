@@ -19,7 +19,7 @@
               @click="openModal(index)"
             >
               <div>
-                <p>{{ person.name }}</p>
+                <p class="font-medium text-lg">{{ person.name }}</p>
               </div>
             </TenantCard>
           </div>
