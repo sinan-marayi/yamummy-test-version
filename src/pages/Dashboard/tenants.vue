@@ -1,17 +1,17 @@
 <template>
      <!--USER LIST-->
-     <div class="bg-green-600 w-full flex-auto">
+     <div class=" w-full flex-auto">
         <div
-          class="flex flex-col bg-grey-400 px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 2xl:px-12 2xl:py-8 space-y-3"
+          class="flex flex-col  px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 2xl:px-12 2xl:py-8 space-y-3"
         >
-          <div class="flex flex-col bg-red-500">
+          <div class="flex flex-col ">
             <h1 class="text-xl font-medium">Pick your next tenant.</h1>
             <p class="text-base">
               Start inviting your favorite tenant from the list.
             </p>
           </div>
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 2xl:gap-8 bg-blue-400"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 2xl:gap-8 "
           >
             <TenantCard
               v-for="(person, index) in persons"
