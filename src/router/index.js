@@ -21,7 +21,6 @@ const routes = [
     ],
   },
   { path: "/pdp", component: pdpListing },
-  { path: "/messages", component: Messages },
 ];
 
 const router = createRouter({
