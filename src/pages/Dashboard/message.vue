@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen">
-        <!--NAV MENU-->
-        <nav class="bg-red-500 w-28 hidden md:flex flex-col justify-between pt-2 pb-4">
+        <!-- NAV MENU -->
+        <!-- <nav class="bg-red-500 w-28 hidden md:flex flex-col justify-between pt-2 pb-4">
             <div class="flex flex-col bg-amber-500 items-center space-y-6">
                 <div class="flex flex-none bg-purple-600">
                     <span class="w-14 h-14 flex-none bg-slate-600 rounded-full">
@@ -39,13 +39,13 @@
                 <span class="w-14 h-14 flex-none bg-slate-600 rounded-full">
                 </span>
             </div>
-        </nav>
+        </nav> -->
         <!-- inbox component -->
         <inbox></inbox>
         <MessageComponent></MessageComponent>
         
          <!--MOBILE NAV MOBILE NAV-->
-    <nav
+    <!-- <nav
       class="h-20 grid md:hidden grid-cols-4 bg-red-600 fixed bottom-0 z-40 w-full items-center"
     >
       <div class="bg-green-400 flex items-center h-full">
@@ -148,19 +148,19 @@
           <span class="text-base font-medium">Settings</span>
         </a>
       </div>
-    </nav>
+    </nav> -->
   </div>
 
 </template>
 
 <script>
-import inbox from "../../components/Dashboard/Inbox.vue"
+import Inbox from "../../components/Dashboard/Inbox.vue"
 import MessageComponent from "../../components/Dashboard/Message.vue"
 
 export default {
-name:"message",
+name:"Message",
 components:{
-    inbox,
+    Inbox,
     MessageComponent,
 }
 }
