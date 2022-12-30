@@ -49,7 +49,7 @@
             class="flex flex-col w-full PS-2 flex-none bg-cyan-600 items-center space-y-2"
           >
             <a
-              href="./dash_messages.html"
+              href="/messages"
               class="w-full justify-center lg:justify-start flex items-center bg-yellow-400"
             >
               <span
@@ -170,18 +170,18 @@
       </nav>
 
       <!--USER LIST-->
-      <div class="bg-green-600 w-full flex-auto">
+      <div class=" w-full flex-auto">
         <div
           class="flex flex-col bg-grey-400 px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 2xl:px-12 2xl:py-8 space-y-3"
         >
-          <div class="flex flex-col bg-red-500">
+          <div class="flex flex-col ">
             <h1 class="text-xl font-medium">Pick your next tenant.</h1>
-            <p class="text-base">
+            <p class="text-base font-light">
               Start inviting your favorite tenant from the list.
             </p>
           </div>
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 2xl:gap-8 bg-blue-400"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 2xl:gap-8 "
           >
             <TenantCard
               v-for="(person, index) in persons"
@@ -189,7 +189,7 @@
               @click="openModal(index)"
             >
               <div>
-                <p>{{ person.name }}</p>
+                <p class="font-semibold">{{ person.name }}</p>
               </div>
             </TenantCard>
           </div>
@@ -344,6 +344,26 @@ export default {
         },
         {
           id: 5,
+          name: "Anburaja",
+        },
+        {
+          id: 6,
+          name: "Anburaja",
+        },
+        {
+          id: 7,
+          name: "Anburaja",
+        },
+        {
+          id: 8,
+          name: "Anburaja",
+        },
+        {
+          id: 9,
+          name: "Anburaja",
+        },
+        {
+          id: 10,
           name: "Anburaja",
         },
       ],
