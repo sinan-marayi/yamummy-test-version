@@ -6,6 +6,7 @@
         class=" w-24 lg:w-48 hidden md:flex flex-col justify-between pt-2 pb-4 shadow border-r rounded-r-2xl"
       >
         <div class="flex flex-col  items-center space-y-6 mt-3 mb-4">
+          <a href="/">
           <div class="flex flex-none ">
             <span class="hidden lg:flex flex-none ">
               <svg
@@ -28,12 +29,12 @@
                 />
               </svg>
             </span>
-            <span class="lg:hidden flex-none bg-slate-600">
+            <span class="lg:hidden flex-none ">
               <svg
                 width="36"
                 height="36"
                 viewBox="0 0 36 36"
-                fill="rgba(243, 80, 109, 1)"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -45,6 +46,7 @@
               </svg>
             </span>
           </div>
+          </a>
           <!--MENU ITEMS-->
           <div
             class="flex flex-col w-full PS-2 flex-none  items-center space-y-2 "
@@ -185,12 +187,12 @@
 
       <!--MOBILE NAV MOBILE NAV-->
       <nav
-        class="h-20 grid md:hidden grid-cols-4 bg-red-600 fixed bottom-0 z-40 w-full items-center"
+        class="h-20 grid md:hidden grid-cols-4  fixed bottom-0 z-40 w-full items-center border-t"
       >
-        <div class="bg-green-400 flex items-center h-full">
+        <div class=" flex items-center h-full">
           <a
-            href="./dash_messages.html"
-            class="w-full justify-center flex flex-col items-center bg-yellow-400 h-full"
+            href="/dashboard/messages"
+            class="w-full justify-center flex flex-col items-center bg-white h-full"
           >
             <span
               class="w-10 h-10 flex justify-center items-center flex-none rounded-full"
@@ -213,8 +215,8 @@
         </div>
         <div class="bg-green-400 flex items-center h-full">
           <a
-            href="./dash_messages.html"
-            class="w-full justify-center flex flex-col items-center bg-yellow-400 h-full"
+            href="/dashboard"
+            class="w-full justify-center flex flex-col items-center bg-white h-full"
           >
             <span
               class="w-10 h-10 flex justify-center items-center flex-none rounded-full"
@@ -238,7 +240,7 @@
         <div class="bg-blue-400 flex items-center h-full">
           <a
             href="/dashboard/profile"
-            class="w-full justify-center flex flex-col items-center bg-yellow-400 h-full"
+            class="w-full justify-center flex flex-col items-center bg-white h-full"
           >
             <span
               class="w-10 h-10 flex justify-center items-center flex-none rounded-full"
@@ -264,7 +266,7 @@
         <div class="bg-green-400 flex items-center h-full">
           <a
             href="/dashboard/settings"
-            class="w-full justify-center flex flex-col items-center bg-yellow-400 h-full"
+            class="w-full justify-center flex flex-col items-center bg-white h-full"
           >
             <span
               class="w-10 h-10 flex justify-center items-center flex-none rounded-full"

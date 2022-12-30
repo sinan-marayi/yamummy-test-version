@@ -93,4 +93,7 @@ export default {
 </script>
 
 <style>
+#card-sec{
+
+}
 </style>
