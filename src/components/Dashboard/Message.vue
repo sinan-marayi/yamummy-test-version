@@ -1,7 +1,7 @@
 <template>
    <div class="flex-auto hidden md:flex ">
             <!--CHAT WINDOW-->
-            <div class="flex flex-col bg-blue-200 justify-between w-2/3 p-2 border-l-2 border-r-2 border-red-700">
+            <div class="flex flex-col bg-blue-200 justify-between w-2/3 p-2">
                 <div class="flex h-16 bg-green-400 justify-between items-center">
                     <h2 class="text-xl font-medium">Messages</h2>
                     <div class="w-10 h-10 bg-slate-500 rounded-full">

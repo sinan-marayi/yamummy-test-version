@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div class="flex h-screen">
       <!--NAV MENU-->
       <nav
@@ -358,3 +358,4 @@ export default {
   },
 };
 </script>
+

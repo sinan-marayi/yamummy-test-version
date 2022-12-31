@@ -1,6 +1,6 @@
 <template>
      <!--USER LIST-->
-     <div class=" w-full flex-auto">
+     <div class=" w-full flex-auto ">
         <div
           class="flex flex-col  px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 2xl:px-12 2xl:py-8 space-y-3"
         >
@@ -85,3 +85,9 @@ export default {
   },
 };
 </script>
+
+<style>
+
+
+
+</style>

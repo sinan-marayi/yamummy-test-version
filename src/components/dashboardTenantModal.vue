@@ -1,4 +1,4 @@
-<template>
+<template >
 <!--OFF CANVAS OFFCANVAS-->
 
 <div class="flex flex-col sm:w-1/2 md:w-2/5 lg:w-1/4 h-screen border-l shadow  rounded-l-2xl bg-white fixed top-0 right-0 z-50 px-4">
@@ -119,6 +119,10 @@ export default{
    .profile{
     border-radius: 70px;
     overflow: hidden;
+   }
+
+   #modalbar{
+   
    }
 
   </style>
