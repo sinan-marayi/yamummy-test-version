@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-green-600 w-full md:w-1/4 space-y-1 p-2">
-            <div class="flex h-16 bg-green-400 justify-between items-center">
+  <div class="bg-green-600 w-full md:w-2/4 space-y-1 p-2">
+            <div class="flex h-16  justify-between items-center">
                 <h2 class="text-xl font-medium">Inbox</h2>
                 <div class="w-4 h-4 bg-slate-500 rounded-full">
 

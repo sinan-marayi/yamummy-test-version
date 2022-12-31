@@ -35,9 +35,8 @@ export default {
 
 <style scoped>
 .card{
-  opacity: 0.5;
-  transition-duration:  .6s;
- ;
+  opacity: 0.4;
+ transition-duration: .5s;
 
 }
 .show{

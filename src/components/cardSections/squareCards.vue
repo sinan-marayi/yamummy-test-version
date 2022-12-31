@@ -94,6 +94,8 @@ export default {
 
 <style>
 #card-sec{
-
+  
+  transition: all .5s;
+  scroll-behavior: smooth;
 }
 </style>
