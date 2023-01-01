@@ -7,6 +7,7 @@ import Messages from "../pages/Dashboard/message.vue";
 import Tenants from "../pages/Dashboard/tenants.vue";
 import Profile from "../pages/Dashboard/profile.vue";
 import Settings from "../pages/Dashboard/settings.vue";
+import Chat from "../pages/Dashboard/chat.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -15,7 +16,7 @@ const routes = [
     component: Dashboard,
     children: [
         { path: "", component: Tenants },
-        { path: "messages", component: Messages },
+        { path: "messages", component: Messages,children:[{path:':id',component:Chat}] },
         { path: "profile", component: Profile },
         { path: "settings", component: Settings }
     ],
