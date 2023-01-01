@@ -1,12 +1,12 @@
 <template>
      <!--USER LIST-->
-     <div class=" w-full flex-auto ">
+     <div class=" w-full flex-auto" :class="{'opacity-30' :toggleModal}">
         <div
           class="flex flex-col  px-2 py-2 md:px-4 md:py-4 lg:px-6 lg:py-6 2xl:px-12 2xl:py-8 space-y-3"
         >
           <div class="flex flex-col ">
             <h1 class="text-xl font-medium">Pick your next tenant.</h1>
-            <p class="text-base">
+            <p class="text-base" >
               Start inviting your favorite tenant from the list.
             </p>
           </div>
@@ -28,6 +28,7 @@
     
 
     <!--OFF CANVAS OFFCANVAS-->
+    
     <TenantModal
       v-if="toggleModal"
       @close="closeModal"
@@ -87,7 +88,4 @@ export default {
 </script>
 
 <style>
-
-
-
 </style>
