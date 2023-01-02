@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-red-200 w-2/5 flex-col flex-auto hidden md:flex overflow-y-auto">
+   <div class=" w-2/5 flex-col flex-auto hidden md:flex overflow-y-auto">
                 <div class="flex">
                     <img alt="gallery" class="block object-cover object-center w-full h-80"
                         src="https://images.unsplash.com/photo-1585128792020-803d29415281?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">

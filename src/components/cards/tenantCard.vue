@@ -1,7 +1,7 @@
 <template>
     <!--TENANT CARD TENANT CARD-->
     <div
-              class="flex flex-col mt-4 shadow  border text-center items-center space-y-4 py-6 rounded-lg"
+              class="flex flex-col mt-4 shadow border text-center items-center space-y-3 py-4 rounded-xl"
             >
               <div
                 class="rounded-full   h-28 w-28 lg:h-36 lg:w-36 profile"

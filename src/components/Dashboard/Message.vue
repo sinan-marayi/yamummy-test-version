@@ -1,18 +1,18 @@
 <template>
-  <div class="flex-auto hidden md:flex">
+  <div class="flex-auto hidden md:flex ">
     <!--CHAT WINDOW-->
-    <div class="flex flex-col bg-blue-200 justify-between w-2/3 p-2">
-      <div class="flex h-16 bg-green-400 justify-between items-center">
+    <div class="flex flex-col border-r rounded-md justify-between w-2/3 p-2">
+      <div class="flex h-16  justify-between items-center">
         <h2 class="text-xl font-medium">Messages</h2>
         <div class="w-10 h-10 bg-slate-500 rounded-full"></div>
       </div>
       <div
-        class="flex flex-col flex-auto overflow-y-auto bg-blue-400 space-y-4"
+        class="flex flex-col flex-auto overflow-y-auto  space-y-4"
       >
         <!--CHAT-->
         <div class="flex space-x-2">
-          <div class="w-7 h-7 flex-none rounded-full bg-green-200"></div>
-          <div class="flex flex-col bg-red-500 rounded-md p-2 max-w-md">
+          <div class="w-7 h-7 flex-none rounded-full bg-slate-500"></div>
+          <div class="flex flex-col bg-pink-500 rounded-md p-2 max-w-md">
             <span class="font-medium">Martin Maravattickal</span>
             <p class="font-base">
               Lorem ipsum dolor sit amet molestias minima sit, facere
@@ -22,8 +22,8 @@
         </div>
         <!--CHAT-->
         <div class="flex flex-row-reverse space-x-2 space-x-reverse">
-          <div class="w-7 h-7 flex-none rounded-full bg-green-200"></div>
-          <div class="flex flex-col bg-red-500 rounded-md p-2 max-w-md">
+          <div class="w-7 h-7 flex-none rounded-full bg-slate-500"></div>
+          <div class="flex flex-col bg-pink-500 rounded-md p-2 max-w-md">
             <span class="font-medium">{{person[0].name}}</span>
             <p class="font-base">
               Lorem ipsum dolor sit amet molestias minima sit, facere
@@ -33,18 +33,18 @@
         </div>
       </div>
 
-      <div class="flex flex-col flex-none bg-grey-200 h-48 justify-between">
+      <div class="flex flex-col flex-none  h-36 justify-between ">
         <div
-          class="flex flex-auto bg-fuchsia-500 overflow-y-auto items-start align-top justify-start"
+          class="flex flex-auto  overflow-y-auto items-start align-top justify-start mb-1"
         >
           <input
-            class="flex w-full items-start justify-start align-top outline-0 outline-none overflow-clip h-full"
+            class="flex w-full items-start justify-start align-top border overflow-clip h-full shadow-inner mx-1 rounded-md "
             placeholder="Type your message here"
             type="text"
           />
         </div>
-        <div class="flex bg-emerald-600 justify-between">
-          <div class="flex bg-pink-400 py-2 space-x-3 flex-none">
+        <div class="flex  justify-between">
+          <div class="flex  py-2 space-x-3 flex-none">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,10 +78,10 @@
               </svg>
             </a>
           </div>
-          <div class="flex bg-pink-500 items-center flex-none">
+          <div class="flex  items-center flex-none">
             <a
               href="#"
-              class="px-3 py-1 text-center items-center bg-white rounded"
+              class="px-3 py-1 text-center items-center bg-pink-500 rounded border mr-1"
             >
               Send
             </a>

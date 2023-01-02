@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="flex h-screen">
+    <div class="flex h-screen" >
       <!--NAV MENU-->
       <nav
         class=" w-24 lg:w-48 hidden md:flex flex-col justify-between pt-2 pb-4 shadow border-r rounded-r-2xl"
