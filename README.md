@@ -1,3 +1,14 @@
+<!-- ROUTES -->
+<!-- / -->
+<!-- /pdp -->
+<!-- /dashboard -->
+<!-- /dashboard/messages -->
+<!-- /dashboard/profile -->
+<!-- /dashboard/settings -->
+
+
+
+
 # yamummy-test-version
 
 ## Project setup
@@ -19,6 +30,8 @@ npm run build
 ```
 npm run lint
 ```
+
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
